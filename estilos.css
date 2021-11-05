@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Helvetica, sans-serif;
+	background-color: #eee;
+}
+
+/* ------------- Navegación --------------- */
+.nav{
+	background-color: #aaa;
+}
+
+.nav__brand,
+.nav__list, 
+.nav__item{
+	display: inline-block;
+}
+.nav{
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav__brand, .nav__brand a, .nav__item,  .nav__item a{
+	padding: 1rem;
+}
+.nav a{
+	color: white;
+	text-decoration: none;
+	position: relative;
+	top: 0;
+	transition: .3s;
+}
+
+.nav a:hover{
+	color: #0ff;
+	top: 10px;
+}
+
+span{
+	color: blueviolet;
+}
+
+.nav__item--current a{
+	color: black;
+	pointer-events: none;
+	font-weight: bold;
+}
+
+/* ---------------- Banner --------------- */
+.banner{
+	background-image: url(/img/india-negro_absoluto.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 60vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner__nav{
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	width: calc(100% - 2rem);
+	display: flex;
+	justify-content: space-between;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.banner__nav-prev,
+.banner__nav-next{
+	font-size: 3rem;
+	display: inline-block;
+	color: #555;
+}
+
+.banner__info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20%;
+	width: max-content;
+	padding: 2rem;
+	color: white;
+}
+.banner__info h1{
+	font-size: 4rem;
+}
+
+.banner__info h6{
+	font-style: italic;
+}
+
+/* ------------- Precios ------------ */
+
+.precios{
+	text-align: center;
+	max-width: 55rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	perspective: 800px;
+}
+
+.precios__item{
+	background-color: #fff;
+	display: inline-block;
+	width: 28%;
+	height: 20rem;
+	margin: 1%;
+	padding: 2rem;
+	border-radius: .5rem;
+	box-shadow: 0px .5rem .8rem rgba(0,0,0, .3);
+	transition: all .3s cubic-bezier(.69,.11,.55,.97);
+}
+
+.precios__item h2{
+	margin-bottom: 2rem;
+	font-size: 2rem;
+
+}
+
+.precios__item:hover{
+	transform: scale(1.05);
+	transform: rotate3d(1,1,1, 10deg);
+	box-shadow: .1rem 1rem 2rem rgba(0,0,0, .2);
+}
+
+.precios__item--importante{
+	background-color: #0ff;
+}
