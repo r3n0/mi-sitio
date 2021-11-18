@@ -134,3 +134,25 @@ span{
 .precios__item--importante{
 	background-color: #0ff;
 }
+
+/* -------- noticias ----------- */
+
+.noticias__container{
+	max-width: 55rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.noticias__item{
+	width: 40%;
+	display: inline-block;
+	text-align: left;
+	background-color: #aaa;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 1rem;
+}
+
+.noticias__img{
+	width: 100%;
+}
