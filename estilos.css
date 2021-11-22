@@ -138,6 +138,10 @@ span{
 
 /* -------- noticias ----------- */
 
+.noticias{
+
+}
+
 .noticias__container{
 	max-width: 55rem;
 	margin: 0 auto;
@@ -156,4 +160,34 @@ span{
 
 .noticias__img{
 	width: 100%;
+}
+
+/* ------ portafolios ------- */
+
+.portafolios{
+
+}
+
+.portafolios__container{
+
+}
+.portafolios__item{
+	font-size: 3rem;
+}
+
+.portafolios__item--destacado{
+	color: red;
+}
+
+.noticias__item--destacado{
+	color: aqua;
+
+}
+
+[class*="--destacado"]{
+	background-color: blue;
+}
+
+[class*="--destacado"]:hover{
+	transform: scale(1.1);
 }
